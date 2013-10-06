@@ -5,6 +5,17 @@ position. Specifically, head pan and tilt messages are converted.
 
 This requires your Q.bo be launched with the ``dynamixelservo`` support.
 
+## Quick start
+
+A launch file is provided which sets up a ``base_link`` frame for the robot and
+runs the joint odometry node. This is useful to testing but in production
+you'll probably have a different solution for setting up the ``base_link``
+frame.
+
+```console
+$ roslaunch qbo_joint_odom joint_odom_with_base_link.launch
+```
+
 ## The qbo\_joint\_odom.py node
 Publish a tf transform for the head.
 
